@@ -1,7 +1,15 @@
 {
   "name": "lesshint-reporter-stylisher",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Reporter for lesshint",
+  "keywords": [
+    "lesshint",
+    "reporter",
+    "formatter",
+    "stylish",
+    "lint",
+    "hint"
+  ],
   "main": "index.js",
   "dependencies": {
     "chalk": "^1.1.3",
