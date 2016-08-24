@@ -16,7 +16,7 @@ function reportFile(results, file) {
         '',
         chalk.underline(file),
         table(_.map(results, reportError), {
-            align: ['', 'r', 'c', 'l'],
+            align: ['', 'r', 'c', 'l', 'r'],
             stringLength: (str) => chalk.stripColor(str).length
         }),
         ''
@@ -28,7 +28,8 @@ function reportError(error) {
         '',
         chalk.dim(`${error.line}:${error.column}`),
         error.severity === 'error' ? chalk.red(error.severity) : chalk.yellow(error.severity),
-        error.message
+        error.message,
+        chalk.dim(error.linter)
     ];
 }
 
