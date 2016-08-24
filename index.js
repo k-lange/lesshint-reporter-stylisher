@@ -16,7 +16,7 @@ function reportFile(results, file) {
         '',
         chalk.underline(file),
         table(_.map(results, reportError), {
-            align: ['', 'r', 'c', 'l', 'r'],
+            align: ['', 'r', 'l', 'l', 'r'],
             stringLength: (str) => chalk.stripColor(str).length
         }),
         ''
