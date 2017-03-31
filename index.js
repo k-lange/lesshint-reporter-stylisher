@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const chalk = require('chalk');
 const table = require('text-table');
+const beeper = require('beeper');
 
 function report(results) {
     if (!results.length) { return; }
@@ -9,6 +10,7 @@ function report(results) {
     const output = _.map(grouped, reportFile).join('\n');
 
     console.log(output);
+    beeper();
 }
 
 function reportFile(results, file) {
