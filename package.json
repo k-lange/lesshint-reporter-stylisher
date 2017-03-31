@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/k-lange/lesshint-reporter-stylisher/issues"
   },
-  "homepage": "https://github.com/k-lange/lesshint-reporter-stylisher#readme"
+  "homepage": "https://github.com/k-lange/lesshint-reporter-stylisher#readme",
+  "devDependencies": {
+    "beeper": "^1.1.1"
+  }
 }
